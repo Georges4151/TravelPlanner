@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/tvModeName"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="驾车"
+        android:textSize="14sp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/tvModeInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="距离：10公里  时间：20分钟"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/tvModeCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥20.00"
+        android:textSize="14sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"/>
+
+</LinearLayout>

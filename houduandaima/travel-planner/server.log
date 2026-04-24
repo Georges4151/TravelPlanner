@@ -1,0 +1,187 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-04-05T11:16:45.892+08:00  INFO 21508 --- [travel-planner] [           main] c.t.TravelPlannerApplication             : Starting TravelPlannerApplication v1.0.0 using Java 17.0.16 with PID 21508 (E:\competition\competition\houduandaima\travel-planner\target\travel-planner-1.0.0.jar started by Lenovo in E:\competition\competition\houduandaima\travel-planner)
+2026-04-05T11:16:45.894+08:00  INFO 21508 --- [travel-planner] [           main] c.t.TravelPlannerApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-04-05T11:16:46.862+08:00  INFO 21508 --- [travel-planner] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-05T11:16:46.865+08:00  INFO 21508 --- [travel-planner] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-05T11:16:46.897+08:00  INFO 21508 --- [travel-planner] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-04-05T11:16:47.562+08:00  INFO 21508 --- [travel-planner] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-05T11:16:47.563+08:00  INFO 21508 --- [travel-planner] [           main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2026-04-05T11:16:47.564+08:00  INFO 21508 --- [travel-planner] [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2026-04-05T11:16:47.573+08:00  INFO 21508 --- [travel-planner] [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2026-04-05T11:16:47.582+08:00  INFO 21508 --- [travel-planner] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05T11:16:47.583+08:00  INFO 21508 --- [travel-planner] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-05T11:16:47.630+08:00  INFO 21508 --- [travel-planner] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-05T11:16:47.632+08:00  INFO 21508 --- [travel-planner] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1647 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+2026-04-05T11:16:50.848+08:00  INFO 21508 --- [travel-planner] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-05T11:16:50.881+08:00  INFO 21508 --- [travel-planner] [           main] c.t.TravelPlannerApplication             : Started TravelPlannerApplication in 5.442 seconds (process running for 6.051)
+2026-04-05T11:18:31.597+08:00  INFO 21508 --- [travel-planner] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-05T11:18:31.600+08:00  INFO 21508 --- [travel-planner] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-05T11:18:31.610+08:00  INFO 21508 --- [travel-planner] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf73ed8] was not registered for synchronization because synchronization is not active
+2026-04-05T11:18:31.680+08:00  INFO 21508 --- [travel-planner] [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-05T11:18:31.841+08:00  INFO 21508 --- [travel-planner] [nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c9988ce
+2026-04-05T11:18:31.843+08:00  INFO 21508 --- [travel-planner] [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@452905732 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM attraction ORDER BY rating DESC LIMIT ?
+==> Parameters: 10(Integer)
+<==    Columns: id, name, pinyin, city, province, description, address, latitude, longitude, open_time, ticket_price, booking_method, play_duration, crowd_level, traffic_info, facilities, image_url, rating, comment_count, create_time, update_time
+<==        Row: 1, 西湖风景区, xihu fengjingqu, 杭州, 浙江, <<BLOB>>, null, null, null, 全天, 0.00, null, 180, 拥挤, <<BLOB>>, null, https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800, 4.8, 0, 2026-03-27 19:18:49, 2026-03-27 20:38:26
+<==        Row: 2, 灵隐寺, lingyinsi, 杭州, 浙江, <<BLOB>>, null, null, null, 07:00-18:00, 75.00, null, 120, 中等, <<BLOB>>, null, https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800, 4.7, 0, 2026-03-27 19:18:49, 2026-03-27 20:38:36
+<==        Row: 5, 千岛湖, qiandaohu, 杭州, 浙江, <<BLOB>>, null, null, null, 08:00-17:00, 130.00, null, 300, 空闲, <<BLOB>>, null, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800, 4.7, 0, 2026-03-27 19:18:49, 2026-03-27 20:38:36
+<==        Row: 4, 乌镇, wuzhen, 嘉兴, 浙江, <<BLOB>>, null, null, null, 09:00-22:00, 150.00, null, 360, 拥挤, <<BLOB>>, null, https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800, 4.6, 0, 2026-03-27 19:18:49, 2026-03-27 20:38:36
+<==        Row: 3, 宋城, songcheng, 杭州, 浙江, <<BLOB>>, null, null, null, 10:00-21:00, 300.00, null, 240, 中等, <<BLOB>>, null, https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800, 4.5, 0, 2026-03-27 19:18:49, 2026-03-27 20:38:36
+<==      Total: 5
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf73ed8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78bb74f7] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1987872144 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM template ORDER BY usage_count DESC LIMIT ?
+==> Parameters: 10(Integer)
+<==    Columns: id, title, destination, days, style, crowd, description, cover_image, user_id, author_name, usage_count, budget, is_official, is_hot, create_time, update_time
+<==        Row: 3, 杭州周末2日游, 杭州, 2, 休闲, 空闲, <<BLOB>>, https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800, null, 旅行博主, 2344, 1500.00, 0, 1, 2026-03-27 19:18:59, 2026-03-29 11:22:29
+<==        Row: 5, 上海3日都市游, 上海, 3, 都市, 拥挤, <<BLOB>>, https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=800, null, 官方, 2137, 4000.00, 1, 1, 2026-03-29 19:23:46, 2026-03-29 22:35:00
+<==        Row: 13, 重庆4日山城游, 重庆, 4, 美食, 拥挤, <<BLOB>>, https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800, null, 官方, 2087, 3200.00, 1, 1, 2026-03-29 19:23:46, 2026-03-29 22:35:00
+<==        Row: 6, 成都4日美食游, 成都, 4, 美食, 中等, <<BLOB>>, https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800, null, 官方, 1877, 3500.00, 1, 1, 2026-03-29 19:23:46, 2026-03-29 22:35:00
+<==        Row: 11, 苏州杭州3日江南游, 苏州, 3, 休闲, 空闲, <<BLOB>>, https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800, null, 官方, 1654, 2800.00, 1, 1, 2026-03-29 19:23:46, 2026-03-29 22:35:00
+<==        Row: 4, 北京4日文化之旅, 北京, 4, 文化, 拥挤, <<BLOB>>, https://images.unsplash.com/photo-1502635388935-1d0c7c6a1e5c?w=800, null, 官方, 1569, 4500.00, 1, 1, 2026-03-29 19:23:46, 2026-03-30 09:10:37
+<==        Row: 7, 西安3日古都游, 西安, 3, 文化, 中等, <<BLOB>>, https://images.unsplash.com/photo-1568625365131-079e026a927d?w=800, null, 官方, 1432, 3000.00, 1, 1, 2026-03-29 19:23:46, 2026-03-29 22:35:00
+<==        Row: 1, 杭州3日错峰游, 杭州, 3, 休闲, 空闲, <<BLOB>>, https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800, null, 官方, 1257, 3000.00, 1, 1, 2026-03-27 19:18:59, 2026-03-29 11:23:24
+<==        Row: 10, 广州3日美食游, 广州, 3, 美食, 中等, <<BLOB>>, https://images.unsplash.com/photo-1569974507005-6dc61f97fb5c?w=800, null, 官方, 1123, 3200.00, 1, 1, 2026-03-29 19:23:46, 2026-03-29 22:37:16
+<==        Row: 8, 丽江大理5日深度游, 丽江, 5, 休闲, 空闲, <<BLOB>>, https://images.unsplash.com/photo-1528181304800-259b08848526?w=800, null, 官方, 987, 4500.00, 1, 1, 2026-03-29 19:23:46, 2026-03-29 22:37:16
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78bb74f7]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12c5dfb9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@913334576 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM user WHERE username = ?
+==> Parameters: testuser(String)
+<==    Columns: id, username, password, phone, email, avatar, member_level, create_time, update_time
+<==        Row: 1, testuser, 123456, 13800138000, test@example.com, null, 0, 2026-03-27 19:18:40, 2026-03-27 19:18:40
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12c5dfb9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46c0fe89] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@528261271 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM attraction WHERE id = ?
+==> Parameters: 1(Long)
+<==    Columns: id, name, pinyin, city, province, description, address, latitude, longitude, open_time, ticket_price, booking_method, play_duration, crowd_level, traffic_info, facilities, image_url, rating, comment_count, create_time, update_time
+<==        Row: 1, 西湖风景区, xihu fengjingqu, 杭州, 浙江, <<BLOB>>, null, null, null, 全天, 0.00, null, 180, 拥挤, <<BLOB>>, null, https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800, 4.8, 0, 2026-03-27 19:18:49, 2026-03-27 20:38:26
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46c0fe89]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@323967c3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@856335393 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM hotel WHERE city = ? ORDER BY rating DESC
+==> Parameters: 杭州(String)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@323967c3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48875a88] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@226872828 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM restaurant WHERE city = ? ORDER BY rating DESC
+==> Parameters: 杭州(String)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48875a88]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c93f0ea] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@955810681 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM transport WHERE departure LIKE CONCAT('%', ?, '%') OR arrival LIKE CONCAT('%', ?, '%') ORDER BY departure_time
+==> Parameters: 杭州(String), 杭州(String)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c93f0ea]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79bcb45d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2020119152 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM budget WHERE itinerary_id = ?
+==> Parameters: 31(Long)
+<==    Columns: id, itinerary_id, total_budget, transport_budget, hotel_budget, food_budget, ticket_budget, other_budget, actual_transport, actual_hotel, actual_food, actual_ticket, actual_other, create_time, update_time
+<==        Row: 1, 31, 1600.00, 200.00, 700.00, 400.00, 200.00, 100.00, null, null, null, null, null, 2026-03-29 19:00:10, 2026-03-29 19:03:59
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79bcb45d]
+Budget found: totalBudget=1600.00, transportBudget=200.00, hotelBudget=700.00
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62505eca] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1209867163 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM travel_checklist WHERE itinerary_id = ? ORDER BY category, id
+==> Parameters: 31(Long)
+<==    Columns: id, itinerary_id, item_name, category, quantity, is_packed, is_purchased, notes, create_time, update_time
+<==        Row: 176, 31, y, 其他, 1, 0, 0, null, 2026-03-29 19:04:13, 2026-03-29 19:04:13
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62505eca]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f1008d3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1909979457 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM itinerary WHERE id = ?
+==> Parameters: 31(Long)
+<==    Columns: id, user_id, title, destination, days, people_count, budget, travel_style, status, start_date, end_date, source, template_id, create_time, update_time, generate_status, generate_message
+<==        Row: 31, 3, 2天上海错峰之旅, 上海, 2, 3, 2000.00, 错峰优先, draft, 2026-04-01, 2026-04-02, ai, null, 2026-03-29 19:00:10, 2026-03-29 19:20:41, completed, 行程生成成功
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f1008d3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f432324] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@17876604 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM itinerary_day WHERE itinerary_id = ? ORDER BY day_number
+==> Parameters: 31(Long)
+<==    Columns: id, itinerary_id, day_number, date, weather, tips, create_time
+<==        Row: 83, 31, 1, 2026-04-01, 多云转晴, <<BLOB>>, 2026-03-29 19:00:43
+<==        Row: 84, 31, 2, 2026-04-02, 晴, <<BLOB>>, 2026-03-29 19:00:43
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f432324]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c57255a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1418408001 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM itinerary_spot WHERE itinerary_day_id = ? ORDER BY order_num
+==> Parameters: 83(Long)
+<==    Columns: id, itinerary_day_id, attraction_id, attraction_name, order_num, arrival_time, leave_time, stay_duration, transport_to_next, notes, create_time
+<==        Row: 210, 83, null, 2, 0, 10:00, 12:00, 180, 驾车, <<BLOB>>, 2026-03-29 19:04:33
+<==        Row: 203, 83, null, 上海邮政博物馆, 2, 9:00, 12:00, 180, 步行15分钟, <<BLOB>>, 2026-03-29 19:00:43
+<==        Row: 204, 83, null, 1933老场坊, 3, 11:00, 12:00, 180, 地铁10号线至海伦路站, <<BLOB>>, 2026-03-29 19:00:43
+<==        Row: 205, 83, null, 徐家汇天主教堂, 4, 9:00, 12:00, 180, 地铁10号线转1号线至徐家汇站, <<BLOB>>, 2026-03-29 19:00:43
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c57255a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4330e62b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@362812465 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM itinerary_spot WHERE itinerary_day_id = ? ORDER BY order_num
+==> Parameters: 84(Long)
+<==    Columns: id, itinerary_day_id, attraction_id, attraction_name, order_num, arrival_time, leave_time, stay_duration, transport_to_next, notes, create_time
+<==        Row: 206, 84, null, 上海博物馆, 1, 09:00, null, 150, 地铁1号线至人民广场站, <<BLOB>>, 2026-03-29 19:00:43
+<==        Row: 207, 84, null, 思南公馆, 2, 12:00, null, 90, 地铁1号线至黄陂南路站, <<BLOB>>, 2026-03-29 19:00:43
+<==        Row: 208, 84, null, 上海工艺美术博物馆, 3, 14:00, null, 90, 步行20分钟, <<BLOB>>, 2026-03-29 19:00:43
+<==        Row: 209, 84, null, 复兴公园, 4, 16:00, null, 60, 步行10分钟, <<BLOB>>, 2026-03-29 19:00:43
+<==      Total: 4
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4330e62b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3965405f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2099312870 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM budget WHERE itinerary_id = ?
+==> Parameters: 31(Long)
+<==    Columns: id, itinerary_id, total_budget, transport_budget, hotel_budget, food_budget, ticket_budget, other_budget, actual_transport, actual_hotel, actual_food, actual_ticket, actual_other, create_time, update_time
+<==        Row: 1, 31, 1600.00, 200.00, 700.00, 400.00, 200.00, 100.00, null, null, null, null, null, 2026-03-29 19:00:10, 2026-03-29 19:03:59
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3965405f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@187f1873] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1467735196 wrapping com.mysql.cj.jdbc.ConnectionImpl@2c9988ce] will not be managed by Spring
+==>  Preparing: SELECT * FROM itinerary WHERE user_id = ? ORDER BY create_time DESC
+==> Parameters: 3(Long)
+<==    Columns: id, user_id, title, destination, days, people_count, budget, travel_style, status, start_date, end_date, source, template_id, create_time, update_time, generate_status, generate_message
+<==        Row: 41, 3, 3天杭州错峰之旅, 杭州, 3, 2, 2000.00, 休闲, draft, 2026-04-01, 2026-04-03, ai, null, 2026-04-01 10:11:22, 2026-04-01 10:11:22, failed, AI服务暂时不可用
+<==        Row: 40, 3, 3天杭州错峰之旅, 杭州, 3, 2, 2000.00, 休闲, draft, 2026-04-01, 2026-04-03, ai, null, 2026-04-01 10:11:16, 2026-04-01 10:11:16, failed, AI服务暂时不可用
+<==        Row: 39, 3, 3天上海错峰之旅, 上海, 3, 2, 3000.00, 休闲, draft, 2026-04-01, 2026-04-03, ai, null, 2026-03-30 14:45:42, 2026-03-30 14:47:53, completed, 行程生成成功
+<==        Row: 37, 3, 2天上海错峰之旅, 上海, 2, 2, 300000.00, 休闲, draft, 2026-04-01, 2026-04-02, ai, null, 2026-03-30 08:58:29, 2026-03-30 08:58:55, completed, 行程生成成功
+<==        Row: 35, 3, 成都4日美食游, 成都, 4, 1, 3500.00, 美食, draft, null, null, template, null, 2026-03-29 19:41:09, 2026-03-29 19:41:09, null, null
+<==        Row: 34, 3, 3天上海错峰之旅, 上海, 3, 1, 4000.00, 都市, draft, null, null, ai, null, 2026-03-29 19:29:54, 2026-03-29 19:29:54, null, null
+<==        Row: 31, 3, 2天上海错峰之旅, 上海, 2, 3, 2000.00, 错峰优先, draft, 2026-04-01, 2026-04-02, ai, null, 2026-03-29 19:00:10, 2026-03-29 19:20:41, completed, 行程生成成功
+<==      Total: 7
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@187f1873]

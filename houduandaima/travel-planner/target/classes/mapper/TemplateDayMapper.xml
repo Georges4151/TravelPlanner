@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travelplanner.mapper.TemplateDayMapper">
+    <select id="findByTemplateId" resultType="com.travelplanner.entity.TemplateDay">
+        SELECT * FROM template_day WHERE template_id = #{templateId} ORDER BY day_number
+    </select>
+    <select id="findById" resultType="com.travelplanner.entity.TemplateDay">
+        SELECT * FROM template_day WHERE id = #{id}
+    </select>
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO template_day (template_id, day_number, date, weather, tips)
+        VALUES (#{templateId}, #{dayNumber}, #{date}, #{weather}, #{tips})
+    </insert>
+</mapper>

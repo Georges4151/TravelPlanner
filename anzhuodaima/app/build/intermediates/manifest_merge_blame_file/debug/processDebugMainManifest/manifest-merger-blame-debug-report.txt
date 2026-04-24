@@ -1,0 +1,437 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.travelplanner"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:4:5-67
+11-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:5:5-79
+12-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:6:5-76
+13-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:6:22-73
+14    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+14-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:7:7-81
+14-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:7:24-78
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:8:5-66
+15-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:8:22-63
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:9:5-77
+16-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:9:22-74
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:10:5-79
+17-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:10:22-76
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:11:5-81
+18-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:11:22-78
+19
+20    <permission
+20-->[androidx.core:core:1.9.0] C:\Users\Lenovo\.gradle\caches\transforms-3\168fd16f696aed070989d54693531e3f\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+21        android:name="com.travelplanner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.9.0] C:\Users\Lenovo\.gradle\caches\transforms-3\168fd16f696aed070989d54693531e3f\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.9.0] C:\Users\Lenovo\.gradle\caches\transforms-3\168fd16f696aed070989d54693531e3f\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.travelplanner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+24-->[androidx.core:core:1.9.0] C:\Users\Lenovo\.gradle\caches\transforms-3\168fd16f696aed070989d54693531e3f\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.9.0] C:\Users\Lenovo\.gradle\caches\transforms-3\168fd16f696aed070989d54693531e3f\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+25    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+25-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:5-65
+25-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:22-62
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+27        android:name="android.hardware.camera"
+27-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+28        android:required="false" />
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+30        android:name="android.hardware.camera.front"
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+31        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+32    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+33    <uses-feature
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+34        android:name="android.hardware.camera.autofocus"
+34-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+35        android:required="false" />
+35-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+36    <uses-feature
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+37        android:name="android.hardware.camera.flash"
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+38        android:required="false" />
+38-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+39    <uses-feature
+39-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+40        android:name="android.hardware.screen.landscape"
+40-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+41        android:required="false" />
+41-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+42    <uses-feature
+42-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+43        android:name="android.hardware.wifi"
+43-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+44        android:required="false" />
+44-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+45
+46    <application
+46-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:13:5-157:19
+47        android:name="com.travelplanner.TravelPlannerApp"
+47-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:14:9-41
+48        android:allowBackup="true"
+48-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:15:9-35
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.9.0] C:\Users\Lenovo\.gradle\caches\transforms-3\168fd16f696aed070989d54693531e3f\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+50        android:debuggable="true"
+51        android:extractNativeLibs="false"
+52        android:icon="@mipmap/ic_launcher"
+52-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:16:9-43
+53        android:label="@string/app_name"
+53-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:17:9-41
+54        android:roundIcon="@mipmap/ic_launcher_round"
+54-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:18:9-54
+55        android:supportsRtl="true"
+55-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:19:9-35
+56        android:testOnly="true"
+57        android:theme="@style/Theme.TravelPlanner"
+57-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:20:9-51
+58        android:usesCleartextTraffic="true" >
+58-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:21:9-44
+59        <activity
+59-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:23:9-31:20
+60            android:name="com.travelplanner.ui.LoginActivity"
+60-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:24:13-45
+61            android:exported="true"
+61-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:25:13-36
+62            android:theme="@style/Theme.TravelPlanner" >
+62-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:26:13-55
+63            <intent-filter>
+63-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:27:13-30:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:28:17-69
+64-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:28:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:29:17-77
+66-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:29:27-74
+67            </intent-filter>
+68        </activity>
+69        <activity
+69-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:33:9-36:58
+70            android:name="com.travelplanner.ui.MainActivity"
+70-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:34:13-44
+71            android:exported="false"
+71-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:35:13-37
+72            android:theme="@style/Theme.TravelPlanner" />
+72-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:36:13-55
+73        <activity
+73-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:38:9-41:58
+74            android:name="com.travelplanner.ui.RegisterActivity"
+74-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:39:13-48
+75            android:exported="false"
+75-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:40:13-37
+76            android:theme="@style/Theme.TravelPlanner" />
+76-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:41:13-55
+77        <activity
+77-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:43:9-46:58
+78            android:name="com.travelplanner.ui.itinerary.ItineraryDetailActivity"
+78-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:44:13-65
+79            android:exported="false"
+79-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:45:13-37
+80            android:theme="@style/Theme.TravelPlanner" />
+80-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:46:13-55
+81        <activity
+81-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:48:9-51:58
+82            android:name="com.travelplanner.ui.itinerary.CreateItineraryActivity"
+82-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:49:13-65
+83            android:exported="false"
+83-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:50:13-37
+84            android:theme="@style/Theme.TravelPlanner" />
+84-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:51:13-55
+85        <activity
+85-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:53:9-56:58
+86            android:name="com.travelplanner.ui.template.TemplateActivity"
+86-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:54:13-57
+87            android:exported="false"
+87-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:55:13-37
+88            android:theme="@style/Theme.TravelPlanner" />
+88-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:56:13-55
+89        <activity
+89-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:58:9-61:58
+90            android:name="com.travelplanner.ui.attraction.AttractionDetailActivity"
+90-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:59:13-67
+91            android:exported="false"
+91-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:60:13-37
+92            android:theme="@style/Theme.TravelPlanner" />
+92-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:61:13-55
+93        <activity
+93-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:63:9-66:58
+94            android:name="com.travelplanner.ui.budget.BudgetActivity"
+94-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:64:13-53
+95            android:exported="false"
+95-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:65:13-37
+96            android:theme="@style/Theme.TravelPlanner" />
+96-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:66:13-55
+97        <activity
+97-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:68:9-71:58
+98            android:name="com.travelplanner.ui.checklist.ChecklistActivity"
+98-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:69:13-59
+99            android:exported="false"
+99-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:70:13-37
+100            android:theme="@style/Theme.TravelPlanner" />
+100-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:71:13-55
+101        <activity
+101-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:73:9-76:58
+102            android:name="com.travelplanner.ui.info.InfoActivity"
+102-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:74:13-49
+103            android:exported="false"
+103-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:75:13-37
+104            android:theme="@style/Theme.TravelPlanner" />
+104-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:76:13-55
+105        <activity
+105-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:78:9-81:58
+106            android:name="com.travelplanner.ui.user.UserActivity"
+106-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:79:13-49
+107            android:exported="false"
+107-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:80:13-37
+108            android:theme="@style/Theme.TravelPlanner" />
+108-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:81:13-55
+109        <activity
+109-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:83:9-86:58
+110            android:name="com.travelplanner.ui.transport.TransportPlanActivity"
+110-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:84:13-63
+111            android:exported="false"
+111-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:85:13-37
+112            android:theme="@style/Theme.TravelPlanner" />
+112-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:86:13-55
+113        <activity
+113-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:88:9-91:58
+114            android:name="com.travelplanner.ui.transport.TransportOptionsActivity"
+114-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:89:13-66
+115            android:exported="false"
+115-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:90:13-37
+116            android:theme="@style/Theme.TravelPlanner" />
+116-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:91:13-55
+117        <activity
+117-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:93:9-96:58
+118            android:name="com.travelplanner.ui.transport.TransportDemoActivity"
+118-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:94:13-63
+119            android:exported="false"
+119-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:95:13-37
+120            android:theme="@style/Theme.TravelPlanner" />
+120-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:96:13-55
+121        <activity
+121-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:98:9-101:58
+122            android:name="com.travelplanner.ui.restaurant.RestaurantSearchActivity"
+122-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:99:13-67
+123            android:exported="false"
+123-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:100:13-37
+124            android:theme="@style/Theme.TravelPlanner" />
+124-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:101:13-55
+125        <activity
+125-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:103:9-106:58
+126            android:name="com.travelplanner.ui.restaurant.RestaurantDetailActivity"
+126-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:104:13-67
+127            android:exported="false"
+127-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:105:13-37
+128            android:theme="@style/Theme.TravelPlanner" />
+128-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:106:13-55
+129        <activity
+129-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:108:9-111:58
+130            android:name="com.travelplanner.ui.restaurant.CitySelectActivity"
+130-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:109:13-61
+131            android:exported="false"
+131-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:110:13-37
+132            android:theme="@style/Theme.TravelPlanner" />
+132-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:111:13-55
+133        <activity
+133-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:113:9-116:58
+134            android:name="com.travelplanner.ui.favorite.FavoritesActivity"
+134-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:114:13-58
+135            android:exported="false"
+135-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:115:13-37
+136            android:theme="@style/Theme.TravelPlanner" />
+136-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:116:13-55
+137        <activity
+137-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:118:9-121:58
+138            android:name="com.travelplanner.ui.hotel.HotelSearchActivity"
+138-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:119:13-57
+139            android:exported="false"
+139-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:120:13-37
+140            android:theme="@style/Theme.TravelPlanner" />
+140-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:121:13-55
+141        <activity
+141-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:123:9-126:58
+142            android:name="com.travelplanner.ui.hotel.HotelDetailActivity"
+142-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:124:13-57
+143            android:exported="false"
+143-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:125:13-37
+144            android:theme="@style/Theme.TravelPlanner" />
+144-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:126:13-55
+145        <activity
+145-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:128:9-131:58
+146            android:name="com.travelplanner.ui.attraction.AttractionSearchActivity"
+146-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:129:13-67
+147            android:exported="false"
+147-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:130:13-37
+148            android:theme="@style/Theme.TravelPlanner" />
+148-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:131:13-55
+149        <activity
+149-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:133:9-136:58
+150            android:name="com.travelplanner.ui.reminder.ReminderMainActivity"
+150-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:134:13-61
+151            android:exported="false"
+151-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:135:13-37
+152            android:theme="@style/Theme.TravelPlanner" />
+152-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:136:13-55
+153        <activity
+153-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:138:9-141:58
+154            android:name="com.travelplanner.ui.reminder.TripReminderActivity"
+154-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:139:13-61
+155            android:exported="false"
+155-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:140:13-37
+156            android:theme="@style/Theme.TravelPlanner" />
+156-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:141:13-55
+157        <activity
+157-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:143:9-146:58
+158            android:name="com.travelplanner.ui.reminder.CollaborationActivity"
+158-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:144:13-62
+159            android:exported="false"
+159-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:145:13-37
+160            android:theme="@style/Theme.TravelPlanner" />
+160-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:146:13-55
+161
+162        <receiver
+162-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:148:9-155:20
+163            android:name="com.travelplanner.ui.reminder.ReminderReceiver"
+163-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:149:13-57
+164            android:enabled="true"
+164-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:150:13-35
+165            android:exported="false" >
+165-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:151:13-37
+166            <intent-filter>
+166-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:152:13-154:29
+167                <action android:name="com.travelplanner.REMINDER" />
+167-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:153:17-69
+167-->E:\competition (2)\anzhuodaima\app\src\main\AndroidManifest.xml:153:25-66
+168            </intent-filter>
+169        </receiver>
+170
+171        <provider
+171-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c790609281d675887afbc48a191dfe39\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+172            android:name="androidx.startup.InitializationProvider"
+172-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c790609281d675887afbc48a191dfe39\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+173            android:authorities="com.travelplanner.androidx-startup"
+173-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c790609281d675887afbc48a191dfe39\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+174            android:exported="false" >
+174-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c790609281d675887afbc48a191dfe39\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+175            <meta-data
+175-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c790609281d675887afbc48a191dfe39\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+176                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+176-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c790609281d675887afbc48a191dfe39\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+177                android:value="androidx.startup" />
+177-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c790609281d675887afbc48a191dfe39\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+178            <meta-data
+178-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Lenovo\.gradle\caches\transforms-3\a4f355a3571401f18fc0587e16aaf684\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+179                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+179-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Lenovo\.gradle\caches\transforms-3\a4f355a3571401f18fc0587e16aaf684\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+180                android:value="androidx.startup" />
+180-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Lenovo\.gradle\caches\transforms-3\a4f355a3571401f18fc0587e16aaf684\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+181            <meta-data
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+182                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+183                android:value="androidx.startup" />
+183-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+184        </provider>
+185
+186        <activity
+186-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\02d1d791d9f7255dc49e405a8fa84e6c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+187            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+187-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\02d1d791d9f7255dc49e405a8fa84e6c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+188            android:exported="false"
+188-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\02d1d791d9f7255dc49e405a8fa84e6c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+189            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+189-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\02d1d791d9f7255dc49e405a8fa84e6c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+190
+191        <meta-data
+191-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\034b97d0579a19ee103c787003a321c9\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+192            android:name="com.google.android.gms.version"
+192-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\034b97d0579a19ee103c787003a321c9\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+193            android:value="@integer/google_play_services_version" />
+193-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\034b97d0579a19ee103c787003a321c9\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+194
+195        <service
+195-->[androidx.room:room-runtime:2.6.1] C:\Users\Lenovo\.gradle\caches\transforms-3\6e509f49b91cd8f549abcde1e58b18ef\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+196            android:name="androidx.room.MultiInstanceInvalidationService"
+196-->[androidx.room:room-runtime:2.6.1] C:\Users\Lenovo\.gradle\caches\transforms-3\6e509f49b91cd8f549abcde1e58b18ef\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+197            android:directBootAware="true"
+197-->[androidx.room:room-runtime:2.6.1] C:\Users\Lenovo\.gradle\caches\transforms-3\6e509f49b91cd8f549abcde1e58b18ef\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+198            android:exported="false" />
+198-->[androidx.room:room-runtime:2.6.1] C:\Users\Lenovo\.gradle\caches\transforms-3\6e509f49b91cd8f549abcde1e58b18ef\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+199
+200        <activity
+200-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+201            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+201-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+202            android:clearTaskOnLaunch="true"
+202-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+203            android:screenOrientation="sensorLandscape"
+203-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+204            android:stateNotNeeded="true"
+204-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+205            android:theme="@style/zxing_CaptureTheme"
+205-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+206            android:windowSoftInputMode="stateAlwaysHidden" />
+206-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\c0afdf6291a9d56dc567689378e0fcc0\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+207
+208        <receiver
+208-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+209            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+209-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+210            android:directBootAware="false"
+210-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+211            android:enabled="true"
+211-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+212            android:exported="true"
+212-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+213            android:permission="android.permission.DUMP" >
+213-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+214            <intent-filter>
+214-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+215                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+215-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+215-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+216            </intent-filter>
+217            <intent-filter>
+217-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+218                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+218-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+218-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+219            </intent-filter>
+220            <intent-filter>
+220-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+221                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+221-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+221-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+222            </intent-filter>
+223            <intent-filter>
+223-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+224                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+224-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+224-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\631451ff2a960355c78a90eb50b8e77d\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+225            </intent-filter>
+226        </receiver>
+227    </application>
+228
+229</manifest>

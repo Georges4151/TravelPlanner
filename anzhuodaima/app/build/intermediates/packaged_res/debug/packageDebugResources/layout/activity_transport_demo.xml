@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 顶部渐变背景区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_travel_gradient"
+            android:paddingTop="40dp"
+            android:paddingBottom="36dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🚄 智能交通规划"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI一键规划 · 多种出行方式 · 智能推荐"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:alpha="0.9"/>
+        </LinearLayout>
+
+        <!-- 表单卡片区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="-16dp">
+
+            <!-- 选择行程卡片 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📋 选择行程"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="12dp"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerItinerary"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_spinner"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 出发地返程地卡片 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📍 出发与返程"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="16dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:hint="出发地"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxCornerRadiusTopStart="14dp"
+                        app:boxCornerRadiusTopEnd="14dp"
+                        app:boxCornerRadiusBottomStart="14dp"
+                        app:boxCornerRadiusBottomEnd="14dp"
+                        app:boxStrokeColor="@color/primary"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@drawable/ic_location">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etOrigin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/text_primary"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="返程地"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxCornerRadiusTopStart="14dp"
+                        app:boxCornerRadiusTopEnd="14dp"
+                        app:boxCornerRadiusBottomStart="14dp"
+                        app:boxCornerRadiusBottomEnd="14dp"
+                        app:boxStrokeColor="@color/primary"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@drawable/ic_place">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etDestination"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/text_primary"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 出行方式卡片 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🚀 出行方式"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公共交通和自驾只能二选一"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_hint"
+                        android:layout_marginBottom="16dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/rgTransportCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="8dp">
+
+                        <RadioButton
+                            android:id="@+id/rbPublicTransport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="🚄 公共交通"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_primary"
+                            android:padding="10dp"
+                            android:checked="true"
+                            android:buttonTint="@color/primary"/>
+
+                        <RadioButton
+                            android:id="@+id/rbSelfDriving"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="🚗 自驾/慢行"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_primary"
+                            android:padding="10dp"
+                            android:buttonTint="@color/primary"/>
+
+                    </RadioGroup>
+
+                    <!-- 公共交通选项 -->
+                    <LinearLayout
+                        android:id="@+id/llPublicTransportOptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="24dp"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="选择交通方式"
+                            android:textSize="13sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginBottom="8dp"/>
+
+                        <CheckBox
+                            android:id="@+id/cbTrain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="🚂 火车"
+                            android:padding="8dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_primary"
+                            android:buttonTint="@color/primary"/>
+
+                        <CheckBox
+                            android:id="@+id/cbHighspeed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="🚅 高铁"
+                            android:padding="8dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_primary"
+                            android:buttonTint="@color/primary"/>
+
+                        <CheckBox
+                            android:id="@+id/cbFlight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="✈️ 飞机"
+                            android:padding="8dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_primary"
+                            android:buttonTint="@color/primary"/>
+
+                        <CheckBox
+                            android:id="@+id/cbTransit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="🚌 公交"
+                            android:padding="8dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_primary"
+                            android:buttonTint="@color/primary"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <!-- 自驾/慢行选项 -->
+                    <LinearLayout
+                        android:id="@+id/llSelfDrivingOptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="24dp"
+                        android:layout_marginTop="4dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="选择出行方式"
+                            android:textSize="13sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginBottom="8dp"/>
+
+                        <CheckBox
+                            android:id="@+id/cbDrive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="🚗 驾车"
+                            android:padding="8dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_primary"
+                            android:buttonTint="@color/primary"/>
+
+                        <CheckBox
+                            android:id="@+id/cbWalk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="🚶 步行"
+                            android:padding="8dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_primary"
+                            android:buttonTint="@color/primary"
+                            android:visibility="gone"/>
+
+                        <CheckBox
+                            android:id="@+id/cbRide"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="🚴 骑行"
+                            android:padding="8dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_primary"
+                            android:buttonTint="@color/primary"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- AI规划按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewTransport"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="🤖 AI 规划路线"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/accent"
+                app:cornerRadius="28dp"
+                android:enabled="false"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💡 选择行程和出行方式后即可开始规划"
+                android:textSize="13sp"
+                android:textColor="@color/text_hint"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

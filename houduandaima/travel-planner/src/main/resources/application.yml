@@ -1,0 +1,52 @@
+﻿server:
+  port: 8080
+
+spring:
+  application:
+    name: travel-planner
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/travel_planner?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&connectionCollation=utf8mb4_unicode_ci
+    username: root
+    password: wxh20051017
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      continue-on-error: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  mvc:
+    charset: UTF-8
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+      force-request: true
+      force-response: true
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write-dates-as-timestamps: false
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.travelplanner.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+travel:
+  deepseek:
+    api-key: sk-bae04f8b40de465290471e774fda4da9
+    api-url: https://api.deepseek.com/v1/chat/completions
+    model: deepseek-chat
+  qweather:
+    api-key: cadf2f57516042728a02e75fccf8a0e2
+    api-url: https://devapi.qweather.com/v7
+  amap:
+    api-key: 6fb19d7aa6a096de22ebee3ec63b83f7
+    api-url: https://restapi.amap.com/v3
