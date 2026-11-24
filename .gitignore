@@ -1,0 +1,35 @@
+# ---------- Java / Maven ----------
+target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+*.war
+*.log
+
+# ---------- Android / Gradle ----------
+.gradle/
+build/
+local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---------- IDE ----------
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# ---------- 系统 / 临时 ----------
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+
+# ---------- 本地真实配置（含 API Key，不提交） ----------
+backend/travel-planner/application-local.yml
